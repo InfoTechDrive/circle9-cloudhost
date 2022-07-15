@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 /* CIRCLE-9
 ENSURE TO USE YOUR NAME BEFORE CLASSNAME or ID
 e.g:
@@ -5,3 +8,160 @@ e.g:
     display: flex;
  }
  TO AVIOD CONFLICTS OF SELECTORS */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.abdulbasit-productive-container {
+  width: 375px;
+  max-width: 100%;
+  background-image: url('images/bg-curve-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration-image-2 {
+  width: 300px;
+}
+
+.abdulbasit-productive-container-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.abdulbasit-productive-container-content h2 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-size: 13px;
+  width: 300px;
+  text-align: left;
+  margin: 20px auto auto 30px;
+}
+
+a {
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  color: hsl(170, 45%, 43%);
+}
+
+hr {
+  margin-top: 3px;
+  background-color: hsl(170, 45%, 43%);
+}
+
+.abdulbasit-testimonial {
+  margin-top: 40px;
+  background-color: white;
+  width: 270px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+
+.icon-quotes {
+  width: 10px;
+}
+
+.abdulbasit-testimonial p {
+  font-size: 10px;
+  margin: 5px auto 10px auto;
+  width: 225px;
+}
+
+.abdulbasit-testimonial div {
+  display: flex;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+span {
+  font-size: 7px;
+}
+
+.testimonial-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+
+/* ABDULBASIT MEDIA QUERY */
+
+@media (min-width: 768px) {
+  .abdulbasit-productive-container {
+    width: 1140px;
+    max-width: 100%;
+    flex-direction: row-reverse;
+    background-image: url('images/bg-curve-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    gap: 100px;
+    padding-top: 50px;
+    justify-content: baseline;
+  }
+
+  .abdulbasit-productive-container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  p {
+    font-size: 13px;
+    width: 300px;
+    text-align: left;
+    margin: 20px auto auto 0;
+  }
+
+  .abdulbasit-testimonial {
+    margin-top: 40px;
+    background-color: white;
+    width: 270px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+}
